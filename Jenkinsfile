@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage ('Initialize') {
       steps {
-        bat '''
+        sh '''
                     echo "PATH = ${Path}"
                     echo "M2_HOME = ${M2_HOME}"
             ''' 
